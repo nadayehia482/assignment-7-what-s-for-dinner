@@ -1,0 +1,368 @@
+body {
+  background: #fff8ec;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #1f2937;
+}
+.logo-circle {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(to bottom right, #f97316, #ef4444);
+}
+.fs-14 {
+  font-size: 14px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid #ffb86a !important;
+}
+.nav-icon-link {
+  color: #6b7280;
+  font-size: 20px;
+}
+.nav-icon-link:hover {
+  color: #f54a00;
+}
+.icon-box {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-divider {
+  border-color: #fde8c8;
+  opacity: 1;
+}
+.navbar-toggler i {
+  color: #6b7280;
+  transition: color 0.2s ease;
+}
+
+.navbar-toggler:hover i {
+  color: #f54a00;
+}
+.recipe-card {
+  border-radius: 24px;
+}
+.details-side {
+  max-height: 100vh;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #ffd9d0 transparent;
+}
+.image-side {
+  position: relative;
+  min-height: 420px;
+  background: #eee;
+}
+.image-side > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blue-i {
+  color: #2b7fff;
+}
+.red-i {
+  color: #fb2c36;
+}
+.orange-i {
+  color: #ff6900;
+}
+.rating-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+.stats-box {
+  position: absolute;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 14px;
+}
+.stat-icon {
+  display: block;
+  font-size: 1.2rem;
+  color: #ff5a1f;
+}
+.icon-btn {
+  background: #ffe9cf;
+  color: #ff5a1f;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+}
+
+.icon-btn:hover {
+  background: #ffd9ad;
+  color: #ff5a1f;
+}
+.tag-pill {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.tag-easy,
+.tag-intermediate {
+  background: #dcfce7;
+  color: #008236;
+}
+.tag-hard {
+  background: #ffe2e2;
+  color: #c10007;
+}
+.tag-cuisine {
+  background: #dbeafe;
+  color: #1447e6;
+}
+.time-alert {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #fef2f2;
+  border-left: 4px solid #fb2c36;
+  border-radius: 12px;
+  padding: 16px;
+  margin: 0 0 24px;
+  color: #e7000b;
+}
+.time-alert i {
+  font-size: 1.5rem;
+  color: #fb2c36;
+}
+.time-alert b {
+  color: #9f0712;
+  font-size: 1rem;
+}
+.tabs {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 12px 8px;
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 0.75rem;
+  transition: color 0.2s ease;
+}
+
+.tab-btn i {
+  margin-right: 6px;
+}
+
+.tab-btn:hover {
+  color: #374151;
+}
+
+.tab-btn.active {
+  color: #ff5a1f;
+  border-bottom-color: #ff5a1f;
+}
+
+@media (min-width: 768px) {
+  .tab-btn {
+    font-size: 1rem;
+  }
+}
+
+.tab-content-box {
+  border-radius: 16px;
+  padding: 20px;
+  overflow-y: scroll;
+  padding-right: 20px;
+  height: 200px;
+  scrollbar-width: thin;
+  scrollbar-color: #ffd9d0 transparent;
+}
+.item-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #374151;
+}
+.ingredients-view {
+  background: linear-gradient(135deg, #fff1e6, #fffbe8);
+  border-radius: 24px;
+  padding: 24px;
+  height: auto;
+  max-height: 310px;
+  overflow-y: auto;
+}
+
+.ingredients-view .item-row {
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.ingredients-view .num {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  font-size: 0.75rem;
+}
+
+.ingredients-view .item-row > span:last-child {
+  padding-top: 0;
+  margin-bottom: 0;
+}
+.num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  background: #ff6900;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-right: 0;
+}
+.item-row > span:last-child {
+  padding-top: 8px;
+}
+.nutri-box {
+  display: flex;
+  align-items: center;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.nutri-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  margin-right: 12px;
+}
+
+.nutri-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.nutri-value {
+  margin-left: auto;
+  font-size: 1.25rem;
+  color: #111827;
+}
+.nutri-icon.orange {
+  background: #ffedd4;
+  color: #ff6900;
+}
+.nutri-icon.blue {
+  background: #dbeafe;
+  color: #155dfc;
+}
+.nutri-icon.yellow {
+  background: #fef9c2;
+  color: #d08700;
+}
+.nutri-icon.red {
+  background: #ffe2e2;
+  color: #e7000b;
+}
+.nutri-icon.green {
+  background: #dcfce7;
+  color: #00a63e;
+}
+.nutri-icon.pink {
+  background: #ffe4f1;
+  color: #e60076;
+}
+
+.btn-try {
+  background: linear-gradient(to right, #ff5a1f, #f43f5e);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 10px 20px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.15s;
+}
+.btn-try:hover {
+  transform: translateY(-2px);
+}
+.tip-box {
+  display: flex;
+  align-items: center;
+  background: #fffbe8;
+  border-left: 4px solid #fdc700;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.tip-icon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #e17100;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+.btn-try:hover {
+  --from: #ea4a0f;
+  --to: #e11d48;
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow:
+    0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+.icon-btn {
+  --bs-btn-active-bg: #ffe9cf;
+  --bs-btn-active-color: #ff5a1f;
+  --bs-btn-active-border-color: transparent;
+  --bs-btn-focus-box-shadow: none;
+}
